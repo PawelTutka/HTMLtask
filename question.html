@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <script data-require="jquery@*" data-semver="2.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet" />
+    <script src="angular.js"></script>
+</head>
+
+<body ng-app="voteApp" ng-controller="MainCtrl">
+    <header class="quest">
+        <div class="home">
+            <a id="plus" href="index2.html">
+                <b class="glyphicon glyphicon-chevron-left"></b>
+            </a>
+            <a id="homelink" href="index2.html"> QUESTIONS</a>
+            <a id="plus" href="#">
+                <b class="glyphicon glyphicon-plus"></b>
+            </a>
+            
+      <span id="last">last time discussed&ensp;1&ensp;day ago</span>
+        </div>
+    </header>
+    <div   class="container">
+        <div class="maincontainer">
+            
+			<div class="col1">
+                <div class="avatar1">
+                    <center>
+                        <a href="#myModal" data-toggle="modal" >
+                            <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" />
+                        </a>
+                    </center>
+                </div>
+			</div>
+            <div class="col2">
+			<span id="name">Eva</span><span id="ask">IS ASKING:</span>
+			<br>
+			<span id="question">Lorem ipsum dolor sit amet</span>
+			<button id="followBut">unfollow</button>
+			</div>
+			<div  class="col3">
+				<br />
+				<button ng-click="upVote()" id="upvote"><span class="glyphicon glyphicon-chevron-up"></span></button>
+                <span>{{vote}}</span><span>  upvotes</span>
+
+								
+				<button ng-click="downVote()" id="downvote"><span class="glyphicon glyphicon-chevron-down"></span></button>
+               
+            </div>
+			<p id="question1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis lacus, luctus non lorem at, elementum accumsan ex. Quisque id diam scelerisque, malesuada lorem ac, porta lorem. Duis hendrerit felis ex, at malesuada neque iaculis quis. Sed id diam metus. In faucibus pretium nibh facilisis venenatis. Donec id sapien consectetur, finibus quam at, feugiat leo. Aliquam semper tincidunt ligula, id venenatis tortor lacinia nec. Curabitur pulvinar ultricies massa ac semper. 
+			</p>
+			<button id="newAnswer"><center>GIVE new answer</center></button>
+            </div>
+			<center id="peers"><span>1</span>&emsp;peer already answered Eva</center>
+        <!<div class="maincontainer-ask">
+            
+			<div class="col1-ask">
+                <div class="avatar1-ask">
+                    <center>
+                        <a href="#myModal2" data-toggle="modal">
+                            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+                        </a>
+                    </center>
+                </div>
+				
+			</div>
+			
+            <div class="col2-ask">
+			<span id="name">Anon</span><span id="ask">COMMENTED IT:</span><span id="day">yesterday</span>
+			<br>
+			<span id="question-ask">Lorem ipsum dolor sit amet</span>
+			<button id="newAnswer-ask"><center>COMMENT</center></button>
+			</div>
+			<div class="col3-ask">
+			<button ng-click="voteUp()" id="upvote-ask"><span class="glyphicon glyphicon-chevron-up"></span></button>
+              <span id="vot">9  upvotes</span>
+
+								
+				<button ng-click="voteDown()" id="downvote-ask"><span class="glyphicon glyphicon-chevron-down"></span></button>
+				
+			
+			
+			
+				
+            
+                
+          
+               
+		
+            <!/div>
+			
+    </div>
+	
+	<!-- FIRST MODAL !-->
+	
+   <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <center>
+		  <div class="modal-header modal-header-success">
+		  
+            <div class="modalAvatar">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<center>
+                <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="90" width="90" />
+				</br>
+				<center>
+				<p id="profileName">Eva</p>
+				</center>
+				</center>
+			</div>
+			<p class="modalDesc">
+			MEMBER FOR&ensp;<span>1</span> <span>year</span>&emsp;&emsp;LAST SEEN&emsp;<span>yesterday</span>&emsp;&emsp;ACTIVITY LEVEL&emsp;<span>emo</span>
+			</p>
+		  </center>
+		  <center>
+          <div class="modal-body">
+		  <center>
+          <button id="modalLeft"><span class="glyphicon glyphicon-chevron-left"></span></button><h1 id="story">HOW IT ALL STARTED</h1>
+		  <button id="modalRight"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		  <center>
+		  <p id="storyHeader">THAT'S WHERE WE HAVE BEEN THIS 1 YEAR AGO</p>
+		  </center>
+		  </center>
+		  <span id="square"></span><span id="historyof">49<br/>peers</span>
+		  <span id="square2"></span><span id="historyof2">2<br/>discussions</span>
+		  <span id="square3"></span><span id="historyof3">3<br/>findings</span>
+		  <span id="square4"></span><span id="historyof4">4<br/>questions</span>
+		  <center>
+		   <p id="joinStory">WHO JOINED THE PLATFORM THAT SAME PERIOD</p>
+		  </center>
+		  <center>
+		  <span id="joinAva1">
+			<a  data-dismiss="modal" data-toggle="modal"  href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva2">
+			<a  data-dismiss="modal" data-toggle="modal"  href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva3">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			</center>
+          </div>
+		  <center>
+          <div class="modal-footer"> 
+		   <p id="hot">THE HOTTEST DISCUSSION THESE DAYS</p>
+		   </center>
+		              <center><a href="question.html" id="hotAva"> <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" /></a></center>
+			
+		   <div id="hotBg">
+		   <center>
+		   <p id="hotStory"><span id="hotStoryName">Eva</span><a href="question.html">&emsp;ASKED QUESTION</a></p>
+		   <p id="hotStoryContent">Lorem ipsum?</p>
+		   <br/>
+		   <p id="hotStoryStats"><span id="statdigets">5</span>&emsp;peers involved&emsp;&emsp;<span id="statdigets">0</span>&emsp;related discussions&emsp;&emsp;<span id="statdigets">1</span>&emsp;conversation&emsp;&emsp;<span id="statdigets">19</span>&emsp;upvotes
+		   </p>
+		   </div>
+          </div>
+		  
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+	</div>
+	<!-- SECOND MODAL !-->
+	
+    <div class="modal fade" id="myModal2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <center>
+		  <div class="modal-header modal-header-success">
+		  
+            <div class="modalAvatar">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<center>
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="90" width="90" />
+				</br>
+				<center>
+				<p id="profileName">Anon</p>
+				</center>
+				</center>
+			</div>
+			<p class="modalDesc">
+			MEMBER FOR&ensp;<span>1</span> <span>year</span>&emsp;&emsp;LAST SEEN&emsp;<span>yesterday</span>&emsp;&emsp;ACTIVITY LEVEL&emsp;<span>emo</span>
+			</p>
+		  </center>
+		  <center>
+          <div class="modal-body">
+		  <center>
+          <button id="modalLeft"><span class="glyphicon glyphicon-chevron-left"></span></button><h1 id="story">HOW IT ALL STARTED</h1>
+		  <button id="modalRight"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		  <center>
+		  <p id="storyHeader">THAT'S WHERE WE HAVE BEEN THIS 1 YEAR AGO</p>
+		  </center>
+		  </center>
+		  <span id="square"></span><span id="historyof">12<br/>peers</span>
+		  <span id="square2"></span><span id="historyof2">1<br/>discussions</span>
+		  <span id="square3"></span><span id="historyof3">1<br/>findings</span>
+		  <span id="square4"></span><span id="historyof4">1<br/>questions</span>
+		  <center>
+		   <p id="joinStory">WHO JOINED THE PLATFORM THAT SAME PERIOD</p>
+		  </center>
+		  <center>
+		  <span id="joinAva1">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal" >
+            <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			EVA
+			</span>
+			<span id="joinAva2">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva3">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			</center>
+          </div>
+		  <center>
+          <div class="modal-footer"> 
+		   <p id="hot">THE HOTTEST DISCUSSION THESE DAYS</p>
+		   </center>
+		              <center><a href="question.html" id="hotAva"> <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" /></a></center>
+			
+		   <div id="hotBg">
+		   <center>
+		   <p id="hotStory"><span id="hotStoryName">Eva</span><a href="question.html">&emsp;ASKED QUESTION</a></p>
+		   <p id="hotStoryContent">Lorem ipsum?</p>
+		   <br/>
+		   <p id="hotStoryStats"><span id="statdigets">5</span>&emsp;peers involved&emsp;&emsp;<span id="statdigets">0</span>&emsp;related discussions&emsp;&emsp;<span id="statdigets">1</span>&emsp;conversation&emsp;&emsp;<span id="statdigets">19</span>&emsp;upvotes
+		   </p>
+		   </div>
+          </div>
+		  
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+	</div>
+</body>
+
+</html>

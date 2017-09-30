@@ -1,0 +1,560 @@
+/* Styles go here */
+body {
+  background-color: #FFE4C4;
+  font-family: 'Amaranth', sans-serif;
+  width:100%;
+  height:100%;
+  
+}
+header{
+background-color: white;
+width:100%;
+padding-top:1%;
+
+position:inline-block;
+
+}
+h1{
+	font-family:'Amaranth', sans-serif;
+}
+#question{
+	text-decoration:none;
+	outline:0px none;
+	margin-left:1.5%;
+	
+}
+
+#last{
+	position:inline-block;
+	font-size:90%;
+	margin-left:35%;
+}
+.container{
+  background-color: #FBFBFB;
+  
+  
+  width:95%;
+  height:500px;
+  
+}
+.maincontainer{
+  background-color:white;
+  margin-left:12%;
+  width:70%;
+  float:none;
+  height:50%;
+  position:relative;
+  font-size:90%;
+  text-align:center;
+ 
+  
+  box-shadow: 3px 0px 1px 0px #F5F5F0;
+  
+}
+div > span {
+  font-size:120%;
+}
+
+
+.lol {
+  
+ width:10%;
+  height:50%;
+  margin-top:12%;
+  margin-left:60%;
+  margin-right:1%;
+  display: block;
+  position:absolute;
+  float:left;
+  background-color:#f2f2f2;
+  font-size:90%;
+}
+.lol > .avatar6{
+	margin-top:5%;
+}
+
+.lol > span {
+  
+ border-top:1px solid black;
+  font-size:90%;
+  color:#A7A9AC;
+  
+}
+.lol > .circle {
+  height:10px;
+  width:10px;
+  color:#A7A9AC;
+  margin-top:9%;
+  margin-left:45%;
+  background:black; 
+  border-radius: 50%;
+  
+}
+
+.col1{
+  width:10%;
+  height:100%;
+  display:block;
+  float:left;
+  background-color:#DFF3FD;
+  font:90%;
+}
+.col1 > .avatar1 {
+  margin-top:30%;
+}
+.col1 > #asking {
+	
+	margin-top:10%;
+	border-top:1px solid;
+	
+  font-size:80%;
+  color:#A7A9AC;
+}
+.col2-2{
+width:90%;
+  height:30%;
+  display:block;
+  float:left;
+  background-color:#DFF3FD;
+  color:#4475B9;
+  text-align:left;
+	
+	
+	
+	
+	
+}
+.col2{
+  width:60%;
+  height:30%;
+  display:block;
+  float:left;
+  background-color:#DFF3FD;
+  color:#4475B9;
+  text-align:left;
+  font-size:100%;
+  
+}
+.col2 > span {
+	display:inline-block;
+	margin-left:3%;
+	
+}
+#ask, #name {
+	margin-top:1%;
+}
+.col2 > #ask {
+	
+	font-size:90%;
+	color:#A7A9AC;
+	margin-left:1%;
+}
+.col3{
+  
+  
+ width:20%;
+ height:90%;
+  display:block;
+  float:left;
+  margin-left:5%;
+  margin-right:1%;
+  
+  position:relative;
+  padding-top:11%;
+  
+  
+  box-sizing:border-box;
+  
+  
+  
+  background-color:white;
+}
+
+.col4{
+  width:10%;
+  height:50%;
+position:absolute;
+  display:block;
+  margin:12%;
+  background-color:#EEEEEE;
+ font-size:90%;
+ 
+
+}
+.col4 > .avatar2 {
+	margin-top:5%;
+}
+.col4 > span {
+  
+  border-top:1px solid;
+  font-size:90%;
+  color:#A7A9AC;
+  
+}
+.col4 > .circle {
+  height:10px;
+  width:10px;
+  color:#A7A9AC;
+  margin-top:9%;
+  margin-left:45%;
+  background:#A7A9AC; 
+  border-radius: 50%;
+  
+}
+.col5{
+	font-size:90%;
+  width:10%;
+  height:50%;
+  margin-top:12%;
+  margin-left:24%;
+  margin-right:1%;
+  display: block;
+  position:absolute;
+  float:left;
+  background-color:#EEEEEE;
+}
+.col5 > .avatar3{
+	margin-top:5%;
+}
+.col5 > span {
+  
+  border-top:1px solid;
+  font-size:90%;
+  color:#A7A9AC;
+  
+}
+.col5 > .circle {
+  height:10px;
+  width:10px;
+  color:#A7A9AC;
+  margin-top:9%;
+  margin-left:45%;
+  background:#A7A9AC; 
+  border-radius: 50%;
+  
+}
+.col6{
+  width:10%;
+  height:50%;
+  margin-top:12%;
+  margin-left:36%;
+  margin-right:1%;
+  display: block;
+  position:absolute;
+  float:left;
+  background-color:#EEEEEE;
+  font-size:90%;
+}
+.col6 > .avatar4{
+	margin-top:5%;
+}
+.col6 > span {
+  
+  border-top:1px solid;
+  font-size:90%;
+  color:#A7A9AC;
+  
+}
+.col6 > .circle {
+  height:10px;
+  width:10px;
+  color:#A7A9AC;
+  margin-top:9%;
+  margin-left:45%;
+  background:#A7A9AC; 
+  border-radius: 50%;
+  
+}
+.col7{
+  width:10%;
+  height:50%;
+  margin-top:12%;
+  margin-left:48%;
+  margin-right:1%;
+  display: block;
+  position:absolute;
+  float:left;
+  background-color:#EEEEEE;
+   font-size:90%;
+}
+.col7 > .avatar5{
+	margin-top:5%;
+}
+
+.col7 > span {
+  
+ border-top:1px solid #A7A9AC;
+  font-size:90%;
+  color:#A7A9AC;
+  
+}
+.col7 > .circle {
+  height:10px;
+  width:10px;
+  color:#A7A9AC;
+  margin-top:9%;
+  margin-left:45%;
+  background:#A7A9AC; 
+  border-radius: 50%;
+  
+}
+#homelink {
+  color: black;
+  font-size:30px;
+  margin-left:13%;
+  text-decoration: none;
+}
+#plus{
+  margin-left:1%;
+  
+  
+}
+a:hover,a:active,a:link{outline: 0px none;}
+.sort1{
+  display: inline;
+  position:inherit;
+  margin-left:15%;
+  margin-right:9%;
+}
+.sort2{
+  font-size: 13px;
+  font-style: oblique;
+}
+.sort2 > a {
+  color: blue;
+  font-style:normal;
+  margin:2px;
+}
+.sort2 > a:active {
+  color: gray;
+}
+.search{
+  height:60px;
+  margin-top:1%;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label{
+    color:black;
+    font-family: Arial, sans-serif;
+    font-size:12px;
+    }
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    vertical-align: middle;
+    margin:10px;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px top no-repeat;
+}
+.searchTerm{
+  display:inline-block;
+  margin-left:15%;
+  margin-right:3%;
+  padding-left:1%;
+  width:570px;
+  height:35px;
+  border:thin solid #F0F0E8;
+  background-color:#FAFAF7;
+}
+.searchButton{
+  display:inline-block;
+  width:200px;
+  height:35px;
+  border:1px solid gray;
+  background-color:white;
+}
+.searchButton > span{
+  color:Gray;
+  vertical-align:middle
+}
+/*STYLING MODAL*/
+.modal-content{
+border-radius:0;
+
+}
+
+#profileName{
+	margin-left:-2.5%;
+	font-size:160%;
+	 color:#337ab7;
+}
+.modal-header{
+width:80%;
+font-size:90%;
+}
+.modalDesc{
+	margin-top:2%;
+color:#A7A9AC;
+}
+.modalDesc > span{
+	color:black;
+	font-size:100%;
+}
+.modal-body{
+	width:80%;
+	font-family:'Amaranth', sans-serif;
+}
+#modalLeft, #story, #modalRight {
+	display: inline-block;
+	font-size:180%;
+	
+}
+#modalLeft, #modalRight {
+	color:black;
+	
+	background-color:white;
+    background-repeat:no-repeat;
+    border:none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:0px none;
+}
+#modalLeft:active,#modalLeft:hover,#modalRight:hover, #modalRight:active{
+	color:#337ab7;
+}
+#story{
+margin-right:10%;
+margin-left:10%;
+font-family:'Amaranth', sans-serif;
+
+}
+
+#storyHeader{
+	display:inline-block;
+	color:#A7A9AC;
+	font-size:90%;
+	margin-bottom:10%;
+}
+#square, #square2,#square3,#square4 {
+	
+	
+	display:inline-block;
+	position:relative;
+	z-index:0;
+	width:70px;
+	height:70px;
+	
+	 color:#337ab7;
+	 background-color:#E5F5FD;
+	
+}
+#square{
+	
+	transform: rotate(50deg);
+}
+#square2{
+	margin-left:1%;
+	
+	transform: rotate(80deg);
+}
+#square3{
+	margin-left:1%;
+	transform: rotate(120deg);
+}
+#square4{
+	margin-left:1%;
+	transform: rotate(10deg);
+}
+
+
+#historyof, #historyof2,#historyof3,#historyof4 {
+	margin-top:3%;
+	display:inline-block;
+	position:absolute;
+	z-index:1;
+	float:left;
+	font-size:90%;
+}
+	#historyof{
+	margin-left:-10%
+	
+	
+	}
+	#historyof2{
+		margin-left:-13%
+	}
+	#historyof3{
+		margin-left:-12%;
+	}
+	#historyof4{
+		margin-left:-12%;
+	}
+#joinStory{
+	margin-top:5%;
+	display:inline-block;
+	color:#A7A9AC;
+	font-size:90%;
+	margin-bottom:10%;
+}
+#joinAva1,#joinAva2,#joinAva3{
+	display:inline-block;
+	position:relative;
+}
+#hot{
+	display:inline-block;
+	color:#A7A9AC;
+	font-size:90%;
+	margin-top:1%;
+}
+.modal-footer{
+	text-align:center;
+	
+	border:none;
+}
+#hotAva{
+	display:block;
+	position:relative;
+	margin-top:2%;
+	margin-bottom:-4%;
+	z-index:3;
+	
+}
+#hotBg{
+	
+	width:100%;
+	height:29%;
+	color:black;
+	position:absolute;
+	background: repeating-linear-gradient(
+    45deg,
+    #e5e5e5,
+    #e5e5e5 1px,
+    white 3px,
+    white 3px
+  );
+}
+#hotStory{
+	margin-top:5%;
+	font-size:90%;
+	color:#A7A9AC;
+	
+}
+#hotStory > a {
+	color:#A7A9AC;
+}
+#hotStory > a:hover,a:active,a:link {outline: 0px none;
+color:#A7A9AC;
+	text-decoration:none;
+	
+}
+#hotStoryName{
+	color:#337ab7;
+	font-size:150%;
+}
+#hotStoryContent{
+	color:#337ab7;
+	font-size:150%;
+}
+#statdigets{
+	font-size:120%;
+}
+.modal-dialog{
+	height:100%
+}

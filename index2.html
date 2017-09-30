@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-require="jquery@*" data-semver="2.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link data-require="bootstrap@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet" />
+    <script src="script.js">
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="home">
+        <a id="plus" href="#">
+          <b class="glyphicon glyphicon-chevron-left">
+          </b>
+        </a>
+        <a id="homelink" href="index2.html"> QUESTIONS
+        </a>
+        <a id="plus" href="#">
+          <b class="glyphicon glyphicon-plus">
+          </b>
+        </a>
+        <form class="sort1">
+          <input id="myshelf" name="selector" value="shelf" checked="checked" type="radio" />
+          <label for="myshelf">
+            <span>
+            </span> My shelf
+          </label>
+          <input id="allq" name="selector" value="all" type="radio" />
+          <label for="allq">
+            <span>
+            </span> All questions
+          </label>
+        </form>
+        <span class="sort2">
+          Sort by:
+          <a id="so1" onclick="jsSortFunction()" href="#">recent
+          </a>
+          or
+          <a id="so2" onclick="jsSort2Function()" href="#">Hot
+          </a>
+        </span>
+      </div>
+      <div class="search">
+        <input class="searchTerm" placeholder="Search questions" type="text" />
+        <button type="submit" class="searchButton">
+          <span>SEARCH
+          </span>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="maincontainer">
+        <div class="col1">
+          <div class="avatar1">
+            <center>
+              <a  data-toggle="modal" href="#myModal">
+                <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+		  <br />
+		  <br />
+		  <br />
+		  
+		  <span id="asking">ASKED</span>
+        </div>
+        <div class="col2">
+          <span id="name">Eva
+          </span>
+          <span id="ask">IS ASKING:
+          </span>
+          <br>
+          <a href="question.html" id="question">
+            <span id="question">Lorem ipsum ?
+          </a>
+        </div>
+        <div class="col3">
+          <span>0
+          </span>  related discussion
+          <br />
+          <br />
+          <br />
+          <span>5
+          </span>   peers involved
+          <br />
+          <br />
+          <br />
+          <span>1
+          </span>   conversations
+        </div>
+        <div class="col4">
+          <div class="avatar2">
+            <center>
+              <a  data-toggle="modal" href="#myModal2">
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <span>VIEWED
+          </span>
+          <br />
+          <div class="circle">
+          </div>
+        </div>
+        <div class="col5">
+          <div class="avatar3">
+            <center>
+              <a data-toggle="modal" href="#myModal2">
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <span>VIEWED
+          </span>
+          <br />
+          <div class="circle">
+          </div>
+        </div>
+        <div class="col6">
+          <div class="avatar4">
+            <center>
+              <a  data-toggle="modal" href="#myModal2">
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <span>VIEWED
+          </span>
+          <br />
+          <div class="circle">
+          </div>
+        </div>
+        <div class="lol">
+          <div class="avatar6">
+            <center>
+              <a  data-toggle="modal" href="#myModal2">
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <span>ANSWERED
+          </span>
+          <br />
+          <div class="circle">
+          </div>
+        </div>
+        <div class="col7">
+          <div class="avatar5">
+            <center>
+              <a data-toggle="modal" href="#myModal2">
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+              </a>
+            </center>
+          </div>
+          <br />
+          <br />
+          <br />
+          <span>VIEWED
+          </span>
+          <br />
+          <div class="circle">
+          </div>
+        </div>
+      </div> <!-- end of maincontainer-->
+    </div> <!-- end of container -->
+   
+   <!--####### Profile Modal #######-->
+	
+	<!-- FIRST MODAL !-->
+	
+   <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <center>
+		  <div class="modal-header modal-header-success">
+		  
+            <div class="modalAvatar">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<center>
+                <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="90" width="90" />
+				</br>
+				<center>
+				<p id="profileName">Eva</p>
+				</center>
+				</center>
+			</div>
+			<p class="modalDesc">
+			MEMBER FOR&ensp;<span>1</span> <span>year</span>&emsp;&emsp;LAST SEEN&emsp;<span>yesterday</span>&emsp;&emsp;ACTIVITY LEVEL&emsp;<span>emo</span>
+			</p>
+		  </center>
+		  <center>
+          <div class="modal-body">
+		  <center>
+          <button id="modalLeft"><span class="glyphicon glyphicon-chevron-left"></span></button><h1 id="story">HOW IT ALL STARTED</h1>
+		  <button id="modalRight"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		  <center>
+		  <p id="storyHeader">THAT'S WHERE WE HAVE BEEN THIS 1 YEAR AGO</p>
+		  </center>
+		  </center>
+		  <span id="square"></span><span id="historyof">49<br/>peers</span>
+		  <span id="square2"></span><span id="historyof2">2<br/>discussions</span>
+		  <span id="square3"></span><span id="historyof3">3<br/>findings</span>
+		  <span id="square4"></span><span id="historyof4">4<br/>questions</span>
+		  <center>
+		   <p id="joinStory">WHO JOINED THE PLATFORM THAT SAME PERIOD</p>
+		  </center>
+		  <center>
+		  <span id="joinAva1">
+			<a  data-dismiss="modal" data-toggle="modal"  href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva2">
+			<a  data-dismiss="modal" data-toggle="modal"  href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva3">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			</center>
+          </div>
+		  <center>
+          <div class="modal-footer"> 
+		   <p id="hot">THE HOTTEST DISCUSSION THESE DAYS</p>
+		   </center>
+		              <center><a href="question.html" id="hotAva"> <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" /></a></center>
+			
+		   <div id="hotBg">
+		   <center>
+		   <p id="hotStory"><span id="hotStoryName">Eva</span><a href="question.html">&emsp;ASKED QUESTION</a></p>
+		   <p id="hotStoryContent">Lorem ipsum?</p>
+		   <br/>
+		   <p id="hotStoryStats"><span id="statdigets">5</span>&emsp;peers involved&emsp;&emsp;<span id="statdigets">0</span>&emsp;related discussions&emsp;&emsp;<span id="statdigets">1</span>&emsp;conversation&emsp;&emsp;<span id="statdigets">19</span>&emsp;upvotes
+		   </p>
+		   </div>
+          </div>
+		  
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+	</div>
+	<!-- SECOND MODAL !-->
+	
+    <div class="modal fade" id="myModal2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <center>
+		  <div class="modal-header modal-header-success">
+		  
+            <div class="modalAvatar">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<center>
+                <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="90" width="90" />
+				</br>
+				<center>
+				<p id="profileName">Anon</p>
+				</center>
+				</center>
+			</div>
+			<p class="modalDesc">
+			MEMBER FOR&ensp;<span>1</span> <span>year</span>&emsp;&emsp;LAST SEEN&emsp;<span>yesterday</span>&emsp;&emsp;ACTIVITY LEVEL&emsp;<span>emo</span>
+			</p>
+		  </center>
+		  <center>
+          <div class="modal-body">
+		  <center>
+          <button id="modalLeft"><span class="glyphicon glyphicon-chevron-left"></span></button><h1 id="story">HOW IT ALL STARTED</h1>
+		  <button id="modalRight"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		  <center>
+		  <p id="storyHeader">THAT'S WHERE WE HAVE BEEN THIS 1 YEAR AGO</p>
+		  </center>
+		  </center>
+		  <span id="square"></span><span id="historyof">12<br/>peers</span>
+		  <span id="square2"></span><span id="historyof2">1<br/>discussions</span>
+		  <span id="square3"></span><span id="historyof3">1<br/>findings</span>
+		  <span id="square4"></span><span id="historyof4">1<br/>questions</span>
+		  <center>
+		   <p id="joinStory">WHO JOINED THE PLATFORM THAT SAME PERIOD</p>
+		  </center>
+		  <center>
+		  <span id="joinAva1">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal" >
+            <img src="https://cdn2.iconfinder.com/data/icons/rcons-users-color/32/girl-512.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			EVA
+			</span>
+			<span id="joinAva2">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			<span id="joinAva3">
+			<a  data-dismiss="modal" data-toggle="modal" href="#myModal2">
+            <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" />
+			</a>
+			<br/>
+			ANON
+			</span>
+			</center>
+          </div>
+		  <center>
+          <div class="modal-footer"> 
+		   <p id="hot">THE HOTTEST DISCUSSION THESE DAYS</p>
+		   </center>
+		              <center><a href="question.html" id="hotAva"> <img src="https://www.iconsfind.com/wp-content/uploads/2017/02/20170214_58a28e23853ae-210x210.png" name="aboutme" class="img-circle" height="45" width="45" /></a></center>
+			
+		   <div id="hotBg">
+		   <center>
+		   <p id="hotStory"><span id="hotStoryName">Eva</span><a href="question.html">&emsp;ASKED QUESTION</a></p>
+		   <p id="hotStoryContent">Lorem ipsum?</p>
+		   <br/>
+		   <p id="hotStoryStats"><span id="statdigets">5</span>&emsp;peers involved&emsp;&emsp;<span id="statdigets">0</span>&emsp;related discussions&emsp;&emsp;<span id="statdigets">1</span>&emsp;conversation&emsp;&emsp;<span id="statdigets">19</span>&emsp;upvotes
+		   </p>
+		   </div>
+          </div>
+		  
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+	</div>
+  
+  </body>
+</html>
